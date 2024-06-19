@@ -1,0 +1,116 @@
+/* Write your desired css */
+
+html,
+body,
+h1 {
+    margin: 0%;
+}
+
+.audio-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+h1,h3{
+    color: antiquewhite;
+}
+
+.audio-img {
+    height: 250px;
+    width: 250px;
+    background-image: url('alec.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    border-color: #7776B3;
+    border-style: inset;
+    border-width: 5px;
+}
+
+.audio-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.audio-btns .skip-back,
+.skip-forward {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #E2BBE9;
+}
+
+.audio-btns .play {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #E2BBE9;
+    cursor: pointer;
+}
+
+.fa-backward-step,
+.fa-forward-step {
+    font-size: 2rem;
+    color: #5A639C;
+}
+
+.fa-play,
+.fa-pause {
+    font-size: 3rem;
+    color: #5A639C;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.current-time,
+.duration {
+    font-family: monospace;
+    color: antiquewhite;
+}
+
+.audio-progress {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    
+    margin: 0 auto;
+}
+.progress {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #7776B3;
+    transition: width 0.1s ease;
+    
+}
+.progress-head {
+    width: 10px;
+    height: 10px;
+    background-color: #7776B3;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    transition: left 0.1s ease;
+}
